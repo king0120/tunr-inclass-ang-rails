@@ -1,7 +1,10 @@
 <h1>All Artists</h1>
 
+<div ui-sref="newArtist">
+  + New Artist
+</div>
 <ul>
-  <li ng-repeat="artist in $ctrl.artists">
+  <li ng-repeat="artist in $ctrl.artists" ui-sref="artist({id: artist.id})">
     <img ng-src="{{artist.photo_url}}" />
     <p>{{artist.name}}</p>
     <p>{{artist.nationality}}</p>

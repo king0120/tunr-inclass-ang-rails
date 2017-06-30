@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>new artist</h1>
+  <form ng-submit="$ctrl.saveArtist()">
+    <div class="form-group">
+      <label for="bandName">Artist Name</label>
+      <input ng-model="$ctrl.artist.name" type="text" class="form-control" id="bandName" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="genre">Nationality</label>
+      <input ng-model="$ctrl.artist.nationality" type="text" class="form-control" id="genre" placeholder="Enter genre">
+    </div>
+    <div class="form-group">
+      <label for="photoUrl">Photo Url</label>
+      <input ng-model="$ctrl.artist.photo_url" type="text" class="form-control" id="photoUrl" placeholder="Enter photo">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
